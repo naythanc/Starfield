@@ -6,7 +6,7 @@ void setup()
 }
 void draw()
 {
-	//your code here
+	ellipse (400,400,20,20);
 }
 class NormalParticle
 {
