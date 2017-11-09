@@ -2,7 +2,7 @@ Particle [] space = new Particle[200];
 
 void setup()
 {
-	size(800,800);
+	size(600,600);
 	frameRate(50);
 	for (int i = 0; i<space.length; i++)
 	{
@@ -58,8 +58,8 @@ class OddballParticle implements Particle
 	int dY=1;
 	OddballParticle()
 	{
-		x= (float)(Math.random()*14);
-		y=(float)(Math.random()*20);
+		x= (float)(Math.random()*30);
+		y=(float)(Math.random()*30);
 		speed=(float)(Math.random()*2*Math.PI);
 		angle=(float)(Math.random()*3);
 	}
