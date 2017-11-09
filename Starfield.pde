@@ -1,3 +1,5 @@
+Particle [] space = new Particle[200];
+
 void setup()
 {
 	size(800,800);
