@@ -1,22 +1,21 @@
-//your code here
 void setup()
 {
 	size(800,800);
 	frameRate(50);
-	for (int i = 0; i<glass.length; i++)
+	for (int i = 0; i<space.length; i++)
 	{
-		glass[i] = new NormalParticle();
+		space[i] = new NormalParticle();
 	}
-	glass[0] = new OddballParticle();
-	glass[1] = new JumboParticle();
+	space[0] = new OddballParticle();
+	space[1] = new JumboParticle();
 }
 void draw()
 {
 	background(0);
-	for (int i=0;i<glass.length; i++)
+	for (int i=0;i<space.length; i++)
 	{
-		glass[i].move();
-		glass[i].show();
+		space[i].move();
+		space[i].show();
 	}
 }
 class NormalParticle implements Particle
@@ -88,9 +87,8 @@ class OddballParticle implements Particle
 	{
 		noStroke();
 		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-		//ellipse((float)x, (float)y, 30, 30);
 		textSize(20);
-		text("ಥ‿ಥ",(float)x+5, (float)y);
+		text("star",(float)x+5, (float)y);
 	}
 
 }
